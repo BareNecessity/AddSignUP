@@ -2,22 +2,16 @@ package com.example.signuploginpage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.widget.EditText;
 
-public class MainActivity2 extends AppCompatActivity {
-    String realUsername = "Username24";
+public class SignUpPage extends AppCompatActivity {
+    String realUsername = "EditText";
     String realPassword = "password123";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-
-
-
-
+        setContentView(R.layout.activity_sign_up_page);
     }
 }
