@@ -8,8 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity2 extends AppCompatActivity {
-    String realUsername = "Username24";
-    String realPassword = "password123";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

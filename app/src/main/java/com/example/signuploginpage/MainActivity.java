@@ -9,9 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
-    private TextInputLayout textInputEmail;
-    private TextInputLayout textInputUsername;
-    private TextInputLayout textInputPassword;
+
 
 
     @SuppressLint("WrongViewCast")
@@ -20,15 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textInputEmail = findViewById(R.id.editTextTextPersonName5);
-        textInputUsername = findViewById(R.id.editTextTextPersonName6);
-        textInputPassword = findViewById(R.id.editTextTextPassword4);
+
 
 
 
 
     }
 
-    public void store_input(View view) {
-    }
+
 }
