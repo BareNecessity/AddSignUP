@@ -14,6 +14,10 @@
     <!--    Why did you constrain all the views to the parents top-->
     <!--    instead of to one another-->
 
+    <!-- I don't know its function. I say it in a code sample -->
+    <!-- I tried constraining them to one another but they get messed up along the line-->
+
+
     <Button
         android:id="@+id/button7"
         android:layout_width="290dp"
