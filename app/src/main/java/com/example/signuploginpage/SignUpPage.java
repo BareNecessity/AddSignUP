@@ -65,7 +65,7 @@ public class SignUpPage extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "enter last name", Toast.LENGTH_SHORT).show();
         }
 
-        if (password != confirmPassword) {
+        else if  (password != confirmPassword) {
             Toast.makeText(getApplicationContext(), "Password do not match", Toast.LENGTH_SHORT).show();
         } else if (confirmPassword == password) {
             Toast.makeText(getApplicationContext(), "Password match", Toast.LENGTH_SHORT).show();
