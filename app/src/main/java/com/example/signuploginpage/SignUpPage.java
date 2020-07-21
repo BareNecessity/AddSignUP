@@ -67,7 +67,7 @@ public class SignUpPage extends AppCompatActivity {
 
         else if  (!password.equals(confirmPassword)) {
             Toast.makeText(getApplicationContext(), "Password do not match", Toast.LENGTH_SHORT).show();
-        } else if (confirmPassword.equals(password)) {
+        } else
             Toast.makeText(getApplicationContext(), "Password match", Toast.LENGTH_SHORT).show();
 
         }
@@ -87,7 +87,7 @@ public class SignUpPage extends AppCompatActivity {
 
 
     }
-}
+
 
 
 
