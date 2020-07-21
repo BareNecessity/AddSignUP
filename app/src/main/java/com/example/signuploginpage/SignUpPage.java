@@ -64,18 +64,24 @@ public class SignUpPage extends AppCompatActivity {
         }else if (lastName.isEmpty()){
             Toast.makeText(getApplicationContext(), "enter last name", Toast.LENGTH_SHORT).show();
         }
+        if (password == confirmPassword){
+            Toast.makeText(getApplicationContext(), "Password Match", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(getApplicationContext(), "Password do not match", Toast.LENGTH_SHORT).show();
+        }
 
-//        if (emailEditText.getText().toString().isEmpty()) {
-//            Toast.makeText(getApplicationContext(), "enter email address", Toast.LENGTH_SHORT).show();
-//        } else {
-//            String email = emailEditText.getText().toString().trim();
-//            if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-//                Toast.makeText(getApplicationContext(), "valid email address", Toast.LENGTH_SHORT).show();
-//            } else {
-//                Toast.makeText(getApplicationContext(), "Invalid email address", Toast.LENGTH_SHORT).show();
-//
-//            }
-//        }
+      if (emailEditText.getText().toString().isEmpty()) {
+           Toast.makeText(getApplicationContext(), "enter email address", Toast.LENGTH_SHORT).show();
+        } else {
+            String email = emailEditText.getText().toString().trim();
+            if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                Toast.makeText(getApplicationContext(), "valid email address", Toast.LENGTH_SHORT).show();
+            } else {
+               Toast.makeText(getApplicationContext(), "Invalid email address", Toast.LENGTH_SHORT).show();
+
+         }
+        }
     }
 
 
