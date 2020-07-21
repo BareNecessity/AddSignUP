@@ -21,7 +21,7 @@ public class SignUpPage extends AppCompatActivity {
 //    private EditText confirmPasskeyEditText;
 
 
-    private EditText firstNameEditText, lastNameEditText,  emailEditText,  phoneNumberEditText,
+    private EditText firstNameEditText, lastNameEditText, emailEditText, phoneNumberEditText,
             passkeyEditText, confirmPasskeyEditText;
 
     //These are used to declare variables for each user Input.
@@ -44,7 +44,7 @@ public class SignUpPage extends AppCompatActivity {
 
     private void setViews() {
         firstNameEditText = (EditText) findViewById(R.id.editTextTextPersonName2);
-        lastNameEditText= (EditText) findViewById(R.id.editTextTextPersonName3);
+        lastNameEditText = (EditText) findViewById(R.id.editTextTextPersonName3);
         emailEditText = (EditText) findViewById(R.id.editTextTextEmailAddress2);
         phoneNumberEditText = (EditText) findViewById(R.id.editTextPhone);
         passkeyEditText = (EditText) findViewById(R.id.editTextTextPassword);
@@ -59,32 +59,34 @@ public class SignUpPage extends AppCompatActivity {
         String password = passkeyEditText.getText().toString();
         String confirmPassword = confirmPasskeyEditText.getText().toString();
 
-        if (firstName.isEmpty()){
+        if (firstName.isEmpty()) {
             Toast.makeText(getApplicationContext(), "enter first name", Toast.LENGTH_SHORT).show();
-        }else if (lastName.isEmpty()){
+        } else if (lastName.isEmpty()) {
             Toast.makeText(getApplicationContext(), "enter last name", Toast.LENGTH_SHORT).show();
         }
-        if (password == confirmPassword){
-            Toast.makeText(getApplicationContext(), "Password Match", Toast.LENGTH_SHORT).show();
-        }
-        else {
+
+        if (password != confirmPassword) {
             Toast.makeText(getApplicationContext(), "Password do not match", Toast.LENGTH_SHORT).show();
+        } else if (confirmPassword == password) {
+            Toast.makeText(getApplicationContext(), "Password match", Toast.LENGTH_SHORT).show();
+
         }
 
-      if (emailEditText.getText().toString().isEmpty()) {
-           Toast.makeText(getApplicationContext(), "enter email address", Toast.LENGTH_SHORT).show();
-        } else {
-            String email = emailEditText.getText().toString().trim();
-            if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                Toast.makeText(getApplicationContext(), "valid email address", Toast.LENGTH_SHORT).show();
-            } else {
-               Toast.makeText(getApplicationContext(), "Invalid email address", Toast.LENGTH_SHORT).show();
+//      if (emailEditText.getText().toString().isEmpty()) {
+//           Toast.makeText(getApplicationContext(), "enter email address", Toast.LENGTH_SHORT).show();
+//        } else {
+//            String email = emailEditText.getText().toString().trim();
+//            if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+//                Toast.makeText(getApplicationContext(), "valid email address", Toast.LENGTH_SHORT).show();
+//            } else {
+//               Toast.makeText(getApplicationContext(), "Invalid email address", Toast.LENGTH_SHORT).show();
+//
+//         }
+//        }
+//    }
 
-         }
-        }
+
     }
-
-
 }
 
 
