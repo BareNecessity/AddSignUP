@@ -30,57 +30,50 @@ public class SignUpPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_page);
+
+        setViews();
+
+        findViewById(R.id.button8).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                signUp();
+            }
+        });
+
+    }
+
+    private void setViews() {
         firstNameEditText = (EditText) findViewById(R.id.editTextTextPersonName2);
-        lastNameEditText = (EditText) findViewById(R.id.editTextTextPersonName3);
+        lastNameEditText= (EditText) findViewById(R.id.editTextTextPersonName3);
         emailEditText = (EditText) findViewById(R.id.editTextTextEmailAddress2);
         phoneNumberEditText = (EditText) findViewById(R.id.editTextPhone);
         passkeyEditText = (EditText) findViewById(R.id.editTextTextPassword);
         confirmPasskeyEditText = (EditText) findViewById(R.id.editTextTextPassword2);
-        findViewById(R.id.button8).setOnClickListener(new View.OnClickListener() {
-
-
-            @Override
-            public void onClick(View view) {
-                //This set of code validates the email address.
-                String firstName = firstNameEditText.getText().toString();
-                String lastName = lastNameEditText.getText().toString();
-                String emailAddress = emailEditText.getText().toString();
-                String password = passkeyEditText.getText().toString();
-                String confirmPassword = confirmPasskeyEditText.getText().toString();
-
-                if (emailEditText.getText().toString().isEmpty()) {
-                    Toast.makeText(getApplicationContext(), "enter email address", Toast.LENGTH_SHORT).show();
-                } else {
-                    String email = emailEditText.getText().toString().trim();
-                    if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                        Toast.makeText(getApplicationContext(), "valid email address", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(getApplicationContext(), "Invalid email address", Toast.LENGTH_SHORT).show();
-                    }
-
-                }
-                }
-
-
-
-
-        });
-
-
-
-
-    }
     }
 
+    private void signUp() {
+        //This set of code validates the email address.
+        String firstName = firstNameEditText.getText().toString();
+        String lastName = lastNameEditText.getText().toString();
+        String emailAddress = emailEditText.getText().toString();
+        String password = passkeyEditText.getText().toString();
+        String confirmPassword = confirmPasskeyEditText.getText().toString();
 
+        if (emailEditText.getText().toString().isEmpty()) {
+            Toast.makeText(getApplicationContext(), "enter email address", Toast.LENGTH_SHORT).show();
+        } else {
+            String email = emailEditText.getText().toString().trim();
+            if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                Toast.makeText(getApplicationContext(), "valid email address", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getApplicationContext(), "Invalid email address", Toast.LENGTH_SHORT).show();
 
+            }
 
+        }
+    }
 
-
-
-
-
-
+}
 
 
 
