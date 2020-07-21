@@ -20,6 +20,7 @@ public class SignUpPage extends AppCompatActivity {
 //    private EditText passkeyEditText;
 //    private EditText confirmPasskeyEditText;
 
+
     private EditText firstNameEditText, lastNameEditText,  emailEditText,  phoneNumberEditText,
             passkeyEditText, confirmPasskeyEditText;
 
@@ -39,9 +40,17 @@ public class SignUpPage extends AppCompatActivity {
 
 
 
+
+
             @Override
             public void onClick(View view) {
                 //This set of code validates the email address.
+                String firstName = firstNameEditText.getText().toString();
+                String lastName = lastNameEditText.getText().toString();
+                String emailAddress = emailEditText.getText().toString();
+                String password = passkeyEditText.getText().toString();
+                String confirmPassword = confirmPasskeyEditText.getText().toString();
+
                 if (emailEditText.getText().toString().isEmpty()) {
                     Toast.makeText(getApplicationContext(), "enter email address", Toast.LENGTH_SHORT).show();
                 } else {
