@@ -12,7 +12,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class SignUpPage extends AppCompatActivity {
+    Button myButton;
 //    private EditText firstNameEditText;
 //    private EditText lastNameEditText;
 //    private EditText emailEditText;
@@ -30,6 +32,20 @@ public class SignUpPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_page);
+        myButton = findViewById(R.id.button2);
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent move = new Intent(SignUpPage.this, MainActivity2.class);
+                startActivity(move);
+
+
+
+
+            }
+
+
+        });
 
         setViews();
 
@@ -56,21 +72,30 @@ public class SignUpPage extends AppCompatActivity {
         String firstName = firstNameEditText.getText().toString();
         String lastName = lastNameEditText.getText().toString();
         String emailAddress = emailEditText.getText().toString();
+        String phoneNUmber = phoneNumberEditText.getText().toString();
         String password = passkeyEditText.getText().toString();
         String confirmPassword = confirmPasskeyEditText.getText().toString();
+
 
         if (firstName.isEmpty()) {
             Toast.makeText(getApplicationContext(), "enter first name", Toast.LENGTH_SHORT).show();
         } else if (lastName.isEmpty()) {
             Toast.makeText(getApplicationContext(), "enter last name", Toast.LENGTH_SHORT).show();
-        }
-
-        else if  (!password.equals(confirmPassword)) {
+        } else if (!password.equals(confirmPassword)) {
             Toast.makeText(getApplicationContext(), "Password do not match", Toast.LENGTH_SHORT).show();
         } else
             Toast.makeText(getApplicationContext(), "Password match", Toast.LENGTH_SHORT).show();
 
-        }
+    }
+
+
+
+    }
+
+
+
+
+
 
 //      if (emailEditText.getText().toString().isEmpty()) {
 //           Toast.makeText(getApplicationContext(), "enter email address", Toast.LENGTH_SHORT).show();
@@ -84,9 +109,9 @@ public class SignUpPage extends AppCompatActivity {
 //         }
 //        }
 //    }
+//
+//
 
-
-    }
 
 
 
