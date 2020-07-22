@@ -12,9 +12,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.regex.Pattern;
+
 
 public class SignUpPage extends AppCompatActivity {
-    Button myButton;
 //    private EditText firstNameEditText;
 //    private EditText lastNameEditText;
 //    private EditText emailEditText;
@@ -32,20 +33,6 @@ public class SignUpPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_page);
-        myButton = findViewById(R.id.button2);
-        myButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent move = new Intent(SignUpPage.this, MainActivity2.class);
-                startActivity(move);
-
-
-
-
-            }
-
-
-        });
 
         setViews();
 
@@ -86,6 +73,17 @@ public class SignUpPage extends AppCompatActivity {
         } else
             Toast.makeText(getApplicationContext(), "Password match", Toast.LENGTH_SHORT).show();
 
+    }
+    private boolean isValidMail(String email) {
+
+        String EMAIL_STRING = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+                + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+
+        return Pattern.compile(EMAIL_STRING).matcher(email).matches();
+
+    }
+    private boolean isValidMobile(String phone) {
+        return android.util.Patterns.PHONE.matcher(phone).matches();
     }
 
 
