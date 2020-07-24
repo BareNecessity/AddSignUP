@@ -34,7 +34,7 @@ public class SignUpPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_page);
 
-        setViews1();
+        setViews();
 
 
 
@@ -48,18 +48,11 @@ public class SignUpPage extends AppCompatActivity {
 
     }
 
-    private void setViews1() {
+    private void setViews() {
         firstNameEditText = (EditText) findViewById(R.id.editTextTextPersonName2);
         lastNameEditText = (EditText) findViewById(R.id.editTextTextPersonName3);
-        setViews2();
-
-    }
-    private void setViews2() {
         emailEditText = (EditText) findViewById(R.id.editTextTextEmailAddress2);
         phoneNumberEditText = (EditText) findViewById(R.id.editTextPhone);
-        setViews3();
-    }
-    private void setViews3() {
         passkeyEditText = (EditText) findViewById(R.id.editTextTextPassword);
         confirmPasskeyEditText = (EditText) findViewById(R.id.editTextTextPassword2);
     }
