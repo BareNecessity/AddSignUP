@@ -36,9 +36,7 @@ public class SignUpPage extends AppCompatActivity {
 
         setViews1();
 
-        setViews2();
 
-        setViews3();
 
 
         findViewById(R.id.button8).setOnClickListener(new View.OnClickListener() {
@@ -53,10 +51,13 @@ public class SignUpPage extends AppCompatActivity {
     private void setViews1() {
         firstNameEditText = (EditText) findViewById(R.id.editTextTextPersonName2);
         lastNameEditText = (EditText) findViewById(R.id.editTextTextPersonName3);
+        setViews2();
+
     }
     private void setViews2() {
         emailEditText = (EditText) findViewById(R.id.editTextTextEmailAddress2);
         phoneNumberEditText = (EditText) findViewById(R.id.editTextPhone);
+        setViews3();
     }
     private void setViews3() {
         passkeyEditText = (EditText) findViewById(R.id.editTextTextPassword);
