@@ -34,7 +34,12 @@ public class SignUpPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_page);
 
-        setViews();
+        firstNameEditText = (EditText) findViewById(R.id.editTextTextPersonName2);
+        lastNameEditText = (EditText) findViewById(R.id.editTextTextPersonName3);
+        emailEditText = (EditText) findViewById(R.id.editTextTextEmailAddress2);
+        phoneNumberEditText = (EditText) findViewById(R.id.editTextPhone);
+        passkeyEditText = (EditText) findViewById(R.id.editTextTextPassword);
+        confirmPasskeyEditText = (EditText) findViewById(R.id.editTextTextPassword2);
 
         findViewById(R.id.button8).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,16 +49,6 @@ public class SignUpPage extends AppCompatActivity {
         });
 
     }
-
-    private void setViews() {
-        firstNameEditText = (EditText) findViewById(R.id.editTextTextPersonName2);
-        lastNameEditText = (EditText) findViewById(R.id.editTextTextPersonName3);
-        emailEditText = (EditText) findViewById(R.id.editTextTextEmailAddress2);
-        phoneNumberEditText = (EditText) findViewById(R.id.editTextPhone);
-        passkeyEditText = (EditText) findViewById(R.id.editTextTextPassword);
-        confirmPasskeyEditText = (EditText) findViewById(R.id.editTextTextPassword2);
-    }
-
     private void signUp() {
         //This set of code validates the email address.
         String firstName = firstNameEditText.getText().toString();
