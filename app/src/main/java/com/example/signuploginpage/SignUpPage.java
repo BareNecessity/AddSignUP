@@ -59,7 +59,7 @@ public class SignUpPage extends AppCompatActivity {
         String firstName = firstNameEditText.getText().toString();
         String lastName = lastNameEditText.getText().toString();
         String emailAddress = emailEditText.getText().toString();
-        String phoneNUmber = phoneNumberEditText.getText().toString();
+        String phoneNumber = phoneNumberEditText.getText().toString();
         String password = passkeyEditText.getText().toString();
         String confirmPassword = confirmPasskeyEditText.getText().toString();
 
@@ -74,21 +74,14 @@ public class SignUpPage extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Password match", Toast.LENGTH_SHORT).show();
 
     }
-    private boolean isValidMail(String email) {
 
-        String EMAIL_STRING = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
-                + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-
-        return Pattern.compile(EMAIL_STRING).matcher(email).matches();
-
-    }
-    private boolean isValidMobile(String phone) {
-        return android.util.Patterns.PHONE.matcher(phone).matches();
-    }
+}
 
 
 
-    }
+
+
+
 
 
 
