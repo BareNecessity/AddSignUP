@@ -68,6 +68,10 @@ public class SignUpPage extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "enter first name", Toast.LENGTH_SHORT).show();
         } else if (lastName.isEmpty()) {
             Toast.makeText(getApplicationContext(), "enter last name", Toast.LENGTH_SHORT).show();
+        } else if (isValidMail(emailAddress)) {
+            Toast.makeText(getApplicationContext(), "Email is not valid", Toast.LENGTH_SHORT).show();
+        } else if (isValidMobile(phoneNUmber)) {
+            Toast.makeText(getApplicationContext(), "Invalid phone number", Toast.LENGTH_SHORT).show();
         } else if (!password.equals(confirmPassword)) {
             Toast.makeText(getApplicationContext(), "Password do not match", Toast.LENGTH_SHORT).show();
         } else
