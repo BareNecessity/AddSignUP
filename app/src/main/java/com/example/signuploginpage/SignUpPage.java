@@ -77,8 +77,9 @@ public class SignUpPage extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Invalid phone number", Toast.LENGTH_SHORT).show();
         } else if (!password.equals(confirmPassword)) {
             Toast.makeText(getApplicationContext(), "Password do not match", Toast.LENGTH_SHORT).show();
-        } else
+        } else {
             Toast.makeText(getApplicationContext(), "Password match", Toast.LENGTH_SHORT).show();
+        }
 
     }
     private boolean isValidMail(String email) {
