@@ -34,6 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AC"
+            android:onClick="operationClick"
             android:textStyle="bold"
             android:textSize="30dp"/>
 
@@ -42,6 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+/-"
+            android:onClick="operationClick"
             android:textSize="30dp"
             android:textStyle="bold"/>
         <Button
@@ -49,6 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="%"
+            android:onClick="operationClick"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
@@ -56,6 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
+            android:onClick="operationClick"
             android:background="@android:drawable/screen_background_dark_transparent"
             android:textSize="30dp"
             android:textStyle="bold"/>
@@ -81,7 +85,8 @@
             android:text="7"
             android:onClick="numberClick"
             android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Eight"
             android:layout_width="wrap_content"
@@ -89,7 +94,8 @@
             android:text="8"
             android:onClick="numberClick"
             android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Nine"
             android:layout_width="wrap_content"
@@ -97,7 +103,8 @@
             android:text="9"
             android:textStyle="bold"
             android:onClick="numberClick"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Multiplication"
             android:layout_width="wrap_content"
@@ -126,27 +133,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
+            android:onClick="numberClick"
             android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"
+            android:onClick="numberClick"
             android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6"
+            android:onClick="numberClick"
             android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Subtraction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
+            android:onClick="operationClick"
             android:background="@android:drawable/screen_background_dark_transparent"
             android:textStyle="bold"
             android:textSize="30dp"/>
@@ -171,23 +185,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
+            android:onClick="numberClick"
             android:textStyle="bold"
             android:textSize="30dp"
-            />
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
+            android:onClick="numberClick"
             android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
+            android:onClick="numberClick"
             android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Addition"
             android:layout_width="wrap_content"
@@ -214,14 +233,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="."
+            android:onClick="numberClick"
             android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
+            android:onClick="numberClick"
             android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Clear"
             android:layout_width="wrap_content"
@@ -235,6 +258,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="="
+            android:onClick="operationClick"
             android:background="@android:drawable/screen_background_dark_transparent"
             android:textStyle="bold"
             android:textSize="30dp"/>
