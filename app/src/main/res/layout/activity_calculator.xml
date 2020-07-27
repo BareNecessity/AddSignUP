@@ -30,6 +30,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:id="@+id/ClearScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AC"
@@ -37,18 +38,21 @@
             android:textSize="30dp"/>
 
         <Button
+            android:id="@+id/PlusOrMinus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+/-"
             android:textSize="30dp"
             android:textStyle="bold"/>
         <Button
+            android:id="@+id/Modulus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="%"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Division"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
@@ -71,24 +75,28 @@
         app:layout_constraintTop_toBottomOf="@+id/Panel1">
 
         <Button
+            android:id="@+id/Seven"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="7"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Eight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Nine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="9"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Multiplication"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="x"
@@ -110,24 +118,28 @@
         app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintTop_toBottomOf="@+id/Panel2">
         <Button
+            android:id="@+id/Four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Subtraction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"
@@ -151,6 +163,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Panel3">
 
         <Button
+            android:id="@+id/One"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
@@ -158,18 +171,21 @@
             android:textSize="30dp"
             />
         <Button
+            android:id="@+id/Two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Addition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
@@ -189,6 +205,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Panel4">
         <Button
+            android:id="@+id/Point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="."
@@ -201,12 +218,14 @@
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/Clear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="C"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
+            android:id="@+id/EqualSign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="="
