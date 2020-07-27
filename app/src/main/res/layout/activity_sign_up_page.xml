@@ -47,7 +47,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/button8">
-
         <EditText
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="match_parent"
@@ -113,6 +112,7 @@ w
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         android:text="Register"
         android:textStyle="bold"
+        android:onClick="signUp"
         android:layout_marginTop="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

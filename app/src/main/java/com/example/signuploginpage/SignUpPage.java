@@ -39,12 +39,12 @@ public class SignUpPage extends AppCompatActivity {
 
 
 
-        findViewById(R.id.button8).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                signUp();
-            }
-        });
+//        findViewById(R.id.button8).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                signUp();
+//            }
+//        });
 
     }
 
@@ -57,7 +57,7 @@ public class SignUpPage extends AppCompatActivity {
         confirmPasskeyEditText = (EditText) findViewById(R.id.editTextTextPassword2);
     }
 
-    private void signUp() {
+    private void signUp(View v) {
         //This set of code validates the email address.
         String firstName = firstNameEditText.getText().toString();
         String lastName = lastNameEditText.getText().toString();
@@ -93,6 +93,7 @@ public class SignUpPage extends AppCompatActivity {
 
     }
 }
+
 
 
 
