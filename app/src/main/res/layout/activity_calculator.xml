@@ -19,7 +19,7 @@
 
     <LinearLayout
         android:id="@+id/Panel1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
@@ -79,6 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="7"
+            android:onClick="numberClick"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
@@ -86,6 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8"
+            android:onClick="numberClick"
             android:textStyle="bold"
             android:textSize="30dp"/>
         <Button
@@ -94,12 +96,14 @@
             android:layout_height="wrap_content"
             android:text="9"
             android:textStyle="bold"
+            android:onClick="numberClick"
             android:textSize="30dp"/>
         <Button
             android:id="@+id/Multiplication"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="x"
+            android:onClick="operationClick"
             android:background="@android:drawable/screen_background_dark_transparent"
             android:textStyle="bold"
             android:textSize="30dp"/>
@@ -190,6 +194,7 @@
             android:layout_height="wrap_content"
             android:text="+"
             android:background="@android:drawable/screen_background_dark_transparent"
+            android:onClick="operationClick"
             android:textStyle="bold"
             android:textSize="30dp"/>
     </LinearLayout>

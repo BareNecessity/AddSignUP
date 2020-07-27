@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".KolaActivity" ></activity>
 
         <activity android:name=".MainActivity3" />
@@ -16,6 +17,14 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".SignUpPage"/>
             <activity android:name=".Calculator">
+=======
+        <activity android:name=".SignUpPage"/>
+        <activity android:name=".KolaActivity" />
+        <activity android:name=".MainActivity3" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Calculator">
+>>>>>>> b1dd32cd506f475d0a65f6e883411e0c84d5028e
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
