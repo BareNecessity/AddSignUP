@@ -27,7 +27,6 @@
 <<<<<<< HEAD
 =======
         android:background="#2b41ea"
->>>>>>> b1dd32cd506f475d0a65f6e883411e0c84d5028e
         android:text="Sign Up"
         android:textColor="#130cd4"
         android:textSize="34dp"
