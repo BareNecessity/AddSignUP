@@ -36,6 +36,9 @@ public class Calculator extends AppCompatActivity {
         } else if (view.getId() == R.id.EqualSign) {
             Toast.makeText(this, "Clicked on Equal Sign", Toast.LENGTH_LONG).show();
         }
+        else if (view.getId() == R.id.Clear) {
+            Toast.makeText(this, "Clicked on Delete", Toast.LENGTH_LONG).show();
+        }
     }
 
 
